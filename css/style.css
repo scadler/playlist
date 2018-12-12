@@ -64,3 +64,7 @@ button {
     font-size: 14px;
     padding: 5px 10px;
 }
+body{
+    background-color:#ccffff;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+}
