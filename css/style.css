@@ -5,8 +5,8 @@ h1 {
 #cart {
     display: flex;
     justify-content: center;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-top: 5px solid  #bbeeee;
+    border-bottom: 5px solid #bbeeee;
 }
 
 .column {
@@ -53,18 +53,23 @@ h1 {
     width: 75%;
     margin: 0 auto 20px auto;
     font-size: 18px;
+    border-radius: 3px;
 }
 
 input {
     padding: 5px 10px;
     font-size: 14px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
 }
 
 button {
     font-size: 14px;
     padding: 5px 10px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
 }
 body{
     background-color:#ccffff;
-    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
 }

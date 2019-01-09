@@ -12,12 +12,12 @@ var songs = [
 // BELOW Add 4 More arrays to store images_links, atists, song lengths, and links for each song
 // Make sure they match the same order as your array above
 var image_links = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
+    "https://i.kym-cdn.com/entries/icons/medium/000/005/320/friday.jpg",
+    "https://www.recordshopx.com/cover/normal/5/55/553148.jpg?cd",
+    "https://vignette.wikia.nocookie.net/hitlerparody/images/a/ad/Gangnam_Style_Official_Cover.png/revision/latest/scale-to-width-down/200?cb=20121012154637",
+    "https://www.whosampled.com/static/track_images_200/lr7710_2010919_1550967089.jpg",
+    "https://i1.sndcdn.com/artworks-000087543799-rv3bhl-t200x200.jpg?e76cf77",
+    "https://steamuserimages-a.akamaihd.net/ugc/448492965239699216/EF6F3BD5FA2A291B980DDB1BF58A2B1C11EFBAAF/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
     ];
 var artists = [
     "Rebecca Black",
@@ -25,7 +25,7 @@ var artists = [
     "Psy",
     "Taio Cruz",
     "Darude",
-    "f",
+    "Lemon Demon",
     ];
 var songLengths = [
     "3:30",
@@ -33,7 +33,7 @@ var songLengths = [
     "4:33",
     "3:22",
     "7:26",
-    "f",
+    "3:34",
     ];
 var song_links = [
     "https://www.youtube.com/watch?v=kfVsfOSbJY0",
@@ -41,7 +41,7 @@ var song_links = [
     "https://www.youtube.com/watch?v=9bZkp7q19f0",
     "https://www.youtube.com/watch?v=Vysgv7qVYTo",
     "https://www.youtube.com/watch?v=y6120QOlsfU",
-    "f",
+    "https://www.youtube.com/watch?v=4WgT9gy4zQA",
     ];
 
 
@@ -53,7 +53,18 @@ function displaySongInfo(){
         $("#songs").append("<p>" + song + "</p>"); 
     });
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
-
+    image_links.forEach(function(image_link) {
+        $("#images").append(`<img src=" ${image_link} ">`); 
+    });
+    artists.forEach(function(artist) {
+        $("#artists").append("<p>" + artist + "</p>"); 
+    });
+    songLengths.forEach(function(songLength) {
+        $("#lengths").append("<p>" + songLength + "</p>"); 
+    });
+    song_links.forEach(function(link, index) {
+        $("#links").append(`<a href="  ${link} ">${songs[index]} </a>`); 
+    });
 }
 
 function emptySongInfo(){
